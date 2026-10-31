@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hubungi Dzikra lewat formulir kontak.">
+  <title>Kontak - DZIKRA'S</title>
+</head>
+<body>
+
+  <header>
+    <h1>DZIKRA'S</h1>
+    <p>Say hello!</p>
+    <nav aria-label="Navigasi utama">
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="artikel.html">Artikel</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Hubungi Aku</h2>
+      <p>Isi formulir di bawah ini untuk mengirim pesan. Kolom bertanda <strong>*</strong> wajib diisi.</p>
+
+      <form action="#" method="post">
+
+        <fieldset>
+          <legend>Data Pengirim</legend>
+
+          <p>
+            <label for="nama">Nama * </label>
+            <input type="text" id="nama" name="nama" placeholder="Nama kamu" required minlength="3" maxlength="50">
+          </p>
+
+          <p>
+            <label for="email">Surel (email) * </label>
+            <input type="email" id="email" name="email" placeholder="nama@contoh.com" required>
+          </p>
+
+          <p>
+            <label for="usia">Usia </label>
+            <input type="number" id="usia" name="usia" min="10" max="100">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Tentang Pesanmu</legend>
+
+          <p>Kamu mau nulis tentang apa? *</p>
+          <p>
+            <input type="radio" id="topik-cerita" name="topik" value="cerita" required>
+            <label for="topik-cerita">Komentar tentang artikel</label>
+          </p>
+          <p>
+            <input type="radio" id="topik-musik" name="topik" value="musik">
+            <label for="topik-musik">Rekomendasi lagu atau film</label>
+          </p>
+          <p>
+            <input type="radio" id="topik-lain" name="topik" value="lainnya">
+            <label for="topik-lain">Lainnya</label>
+          </p>
+
+          <p>
+            <label for="kampus">Asal kamu </label>
+            <select id="kampus" name="asal">
+              <option value="">-- Pilih --</option>
+              <option value="pelajar">Pelajar</option>
+              <option value="mahasiswa">Mahasiswa</option>
+              <option value="umum">Umum</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="pesan">Pesan * </label><br>
+            <textarea id="pesan" name="pesan" rows="5" cols="40" required minlength="10" placeholder="Tulis pesanmu di sini..."></textarea>
+          </p>
+        </fieldset>
+
+        <p>
+          <input type="checkbox" id="setuju" name="setuju" required>
+          <label for="setuju">Saya setuju pesan ini dibaca oleh pemilik website. *</label>
+        </p>
+
+        <p>
+          <button type="submit">Kirim</button>
+          <button type="reset">Reset</button>
+        </p>
+
+      </form>
+    </section>
+
+    <aside>
+      <h2>Info Lain</h2>
+      <p>Kamu juga bisa menemukanku di Instagram dan TikTok. Terima kasih sudah mampir!</p>
+      <p><a href="index.html">Kembali ke Beranda</a></p>
+    </aside>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Fadiyah Dzikra Ulfah. Gracias!</p>
+    <nav aria-label="Navigasi footer">
+      <a href="index.html">Beranda</a> |
+      <a href="artikel.html">Artikel</a> |
+      <a href="kontak.html">Kontak</a>
+    </nav>
+  </footer>
+
+</body>
+</html>
